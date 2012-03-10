@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.houzuo.android.autonotes"
+    android:versionCode="3"
+    android:versionName="3.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <service android:name="net.houzuo.android.autonotes.AutoNotesService" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="net.houzuo.android.autonotes.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".KeywordsActivity" >
+        </activity>
+        <activity android:name=".DaysActivity" >
+        </activity>
+        <activity android:name=".NotesActivity" >
+        </activity>
+        <activity android:name=".NoteShareActivity" >
+        </activity>
+        <activity android:name=".SearchActivity" >
+        </activity>
+    </application>
+
+</manifest>

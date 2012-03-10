@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description" />
+
+    <ToggleButton
+        android:id="@+id/autosaveToggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="@string/autocapture_off"
+        android:textOn="@string/autocapture_on" />
+
+    <Button
+        android:id="@+id/setKeywordsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/set_keywords" />
+
+    <LinearLayout
+        android:id="@+id/horizontalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/notesButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/notes" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/search" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/settingsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/settings"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/filterClipboardTextView"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:text="@string/filter_clipboard" />
+
+            <ToggleButton
+                android:id="@+id/clipboardToggleButton"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dip"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textOff="@string/no"
+                android:textOn="@string/yes" />
+
+            <Button
+                android:id="@+id/clipboardHelpButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:text="@string/question_mark" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/filterMessageTextView"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:text="@string/filter_message" />
+
+            <ToggleButton
+                android:id="@+id/messageToggleButton"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dip"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textOff="@string/no"
+                android:textOn="@string/yes" />
+
+            <Button
+                android:id="@+id/messageHelpButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:text="@string/question_mark" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/minWordsTextView"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:text="@string/min_words" />
+
+            <EditText
+                android:id="@+id/minWordsEditText"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_weight="0.2"
+                android:inputType="number" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/minWordsHelpButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:text="@string/question_mark" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/contactButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contact" />
+
+</LinearLayout>
